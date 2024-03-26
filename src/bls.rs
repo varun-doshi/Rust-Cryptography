@@ -1,5 +1,3 @@
-use bls_signatures::{self, PrivateKey, PublicKey};
-use rand::thread_rng;
 use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize, Serialize)]
@@ -9,35 +7,12 @@ struct Transaction {
     amount: u64,
 }
 
-// fn main() {
-//     let private_key_1 = PrivateKey::generate(&mut thread_rng());
-//     let public_key_1 = private_key_1.public_key();
-//     let private_key_2 = PrivateKey::generate(&mut thread_rng());
-//     let public_key_2 = private_key_2.public_key();
-
-//     let txn: Transaction = Transaction {
-//         from: String::from("public_key_1"),
-//         to: String::from("public_key_2"),
-//         amount: 10,
-//     };
-
-//     let serialized_message = serde_json::to_string(&txn).unwrap();
-//     let signed_txn = private_key_1.sign(&serialized_message);
-//     let verify = public_key_1.verify(signed_txn, &serialized_message);
-
-//     println!("{verify}");
-// }
-
-fn main() {
-    println!("BLS Signature verication");
-}
-
 #[cfg(test)]
 mod tests {
     use bls_signatures::PrivateKey;
     use rand::thread_rng;
 
-    use crate::Transaction;
+    use crate::bls::Transaction;
 
     #[test]
     fn should_work() {
