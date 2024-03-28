@@ -11,6 +11,21 @@
 * [BLS Signature Verification](./src/bls.rs) <br />
 * [BLS Signature Aggregation](./src/bls_aggregation.rs) <br />
 
+## How to run
+
+Clone the repository using 
+```
+git clone <link to this repo>
+```
+Install the crates
+```
+cargo build
+```
+Run the tests
+```
+cargo test
+```
+
 ## Contribution
 
 If you would like to add some functions, feel free to clone,add and raise a PR. This repository is open for contributions.
