@@ -6,7 +6,7 @@
 
 ##### Note: Currently, not focused on creating the cryptographic functions themselves, but on understanding how these work. In due course, may contain creating the functions froms scratch
 
-## Contents
+## Content
 
 * [BLS Signature Verification](./src/bls.rs) <br />
 * [BLS Signature Aggregation](./src/bls_aggregation.rs) <br />
