@@ -10,6 +10,7 @@
 
 * [BLS Signature Verification](./src/bls.rs) <br />
 * [BLS Signature Aggregation](./src/bls_aggregation.rs) <br />
+* [Substitution Cipher](./src/bin/substitution_cypher.rs) <br />
 
 ## How to run
 
