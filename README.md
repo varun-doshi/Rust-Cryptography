@@ -1,15 +1,30 @@
 # Cryptography using Rust
 
-Work in Progress
+## Work in Progress
 
-## This repo contains implementations of cryptographic functions using Rust.
+### This repo contains implementations of cryptographic functions using Rust.
 
 ##### Note: Currently, not focused on creating the cryptographic functions themselves, but on understanding how these work. In due course, may contain creating the functions froms scratch
 
-## Contents
+## Content
 
-[BLS Signature Verification](./src/bls.rs)
-[BLS Signature Aggregation](./src/bls_aggregation.rs)
+* [BLS Signature Verification](./src/bls.rs) <br />
+* [BLS Signature Aggregation](./src/bls_aggregation.rs) <br />
+
+## How to run
+
+Clone the repository using 
+```
+git clone <link to this repo>
+```
+Install the crates
+```
+cargo build
+```
+Run the tests
+```
+cargo test
+```
 
 ## Contribution
 
